@@ -14,7 +14,7 @@ Config.FuelDecor = "_FUEL_LEVEL" -- don't touch
 
 Config.interact = false  -- https://github.com/darktrovx/interact
 
-Config.oxtarget = false -- https://github.com/overextended/ox_target
+Config.oxtarget = true -- https://github.com/overextended/ox_target
 
 -- Blacklist certain vehicles. Use names or hashes. https://wiki.gtanet.work/index.php?title=Vehicle_Models
 Config.Blacklist = {
