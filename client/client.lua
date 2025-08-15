@@ -355,7 +355,7 @@ end)
 RegisterNetEvent('ps-fuel:client:ShowCanInput', function ()
 	local playerMoney = QBCore.Functions.GetPlayerData().money
 	local dialog = exports['qb-input']:ShowInput({
-		header = "Gas Station",
+		header = "ガソリンスタンド",
 		submitText = "Accept Charge: $"..Config.canCost,
 		inputs = {
 			{
@@ -401,16 +401,16 @@ RegisterNetEvent('ps-fuel:client:refuelCanMenu', function()
 		price = math.floor(fuelToAdd * Config.fuelPrice)
 		local playerMoney = QBCore.Functions.GetPlayerData().money
 		local dialog = exports['qb-input']:ShowInput({
-			header = "Gas Station",
-			submitText = "Accept Charge: $"..Config.refuelCost,
+			header = "ガソリンスタンド",
+			submitText = "料金を支払う: $"..Config.refuelCost,
 			inputs = {
 				{
-					text = "Payment Methods",
+					text = "支払い方法",
 					name = "billtype",
 					type = "select",
 					options = { 
-						{ value = "cash", text = "Cash" },
-						{ value = "bank", text = "Card" }
+						{ value = "cash", text = "現金" },
+						{ value = "bank", text = "カード" }
 					},
 				},
 			},
@@ -503,16 +503,16 @@ RegisterNetEvent('ps-fuel:client:ShowInput', function (refillCost)
 	local playerMoney = QBCore.Functions.GetPlayerData().money
 	if not HasPedGotWeapon(ped, 883325847) then
 		local dialog = exports['qb-input']:ShowInput({
-			header = "Gas Station",
-			submitText = "Accept Charge: $"..refillCost,
+			header = "ガソリンスタンド",
+			submitText = "料金を支払う: $"..Config.refuelCost,
 			inputs = {
 				{
-					text = "Payment Methods",
+					text = "支払い方法",
 					name = "billtype",
 					type = "select",
 					options = { 
-						{ value = "cash", text = "Cash" },
-						{ value = "bank", text = "Card" }
+						{ value = "cash", text = "現金" },
+						{ value = "bank", text = "カード" }
 					},
 				},
 			},
